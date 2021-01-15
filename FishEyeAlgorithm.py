@@ -1,6 +1,7 @@
-
 import pygame
 import math
+
+
 def fish_eye(image: pygame.Surface):
     """ Fish eye algorithm """
     w, h = image.get_size()
@@ -38,7 +39,6 @@ def fish_eye(image: pygame.Surface):
                     y2 = int(nyn * h2 + h2)
 
                     if 0 <= int(y2 * w + x2) < w * h:
-
                         pixel = image.get_at((x2, y2))
                         image_copy.set_at((x, y), pixel)
 

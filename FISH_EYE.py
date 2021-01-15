@@ -1,5 +1,3 @@
-
-
 # PYGAME IS REQUIRED
 try:
     import pygame
@@ -39,7 +37,7 @@ if __name__ == '__main__':
 
         if keys[pygame.K_F8]:
             pygame.image.save(screen, 'Screendump' + str(i) + '.png')
-            
+
         if keys[pygame.K_ESCAPE]:
             break
 
